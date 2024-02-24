@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>龍底加人力派遣專業</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white" >
     <header class="bg-teal-700 text-white sticky top-0 z-10">
@@ -13,19 +14,37 @@
                 <a href="#hero">💪 龍底加人力派遣專業</a>
             </h1>
             <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
-                    &#9776
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8 z-10">
+                    <!-- &#9776 -->
+                    <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 duration-500 transition-all
+                         before:content-[''] before:bg-white before:w-8 before:h-1 before:duration-500 before:transition-all
+                         before:rounded before:absolute before:-translate-x-4 before:-translate-y-3
+                         after:content-[''] after:bg-white after:w-8 after:h-1 after:transition-all after:duration-500
+                         after:rounded after:absolute after:-translate-x-4 after:translate-y-3">
+                         
+                    </div>
                 </button>
-                <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <a href="#services" class="hover:opacity-90">多元服務</a>
                     <a href="#testimonial" class="hover:opacity-90">客戶回饋</a>
                     <a href="#contact" class="hover:opacity-90">專人諮詢</a>
                 </nav>
             </div>
         </section>
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden" >
+            <!-- <button class="text-8xl px-6 self-end">
+                &times;
+            </button> -->
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hero" class="w-full text-center py-6 hover:opacity-90">首頁</a>
+                <a href="#services" class="w-full text-center py-6 hover:opacity-90">多元服務</a>
+                <a href="#testimonial" class="w-full text-center py-6 hover:opacity-90">客戶回饋</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-90">專人諮詢</a>
+            </nav>
+        </section>
     </header>
-    <main class="max-w-4xl mx-auto">
-        <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row sm:mt-12 p-6 items-center gap-8 mb-12">
+    <main id="hero" class="max-w-4xl mx-auto">
+        <section class="flex flex-col-reverse justify-center sm:flex-row sm:mt-12 p-6 items-center gap-8 mt-9 mb-12 widescreen:section-min-height tallscreen:section-min-height">
             <article class="sm:w-1/2">
                 <h2 class="max-w-md text-4xl font-bold text-center sm:text-left text-slate-900 dark:text-white">
                     順應企業產業、長短期需求<br><span class="text-indigo-700 dark:text-indigo-300">提供最適合的人力派遣服務<br></span> 為您的企業做最有力的後援 
@@ -42,11 +61,11 @@
             </div>
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        <section id="services" class="p-6 my-12 scroll-mt-20">
+        <section id="services" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
             <h2 class="text-4xl font-bold text-center mb-6 text-slate-900 dark:text-white">
                 多元服務
             </h2>
-            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row sm:mt-72 items-center gap-8">
                 <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
                     <div class="icon_container h-28 max-h-28 mb-6">
                         <img src="./img/fishing_wading.png" alt="fishing" class="max-h-full">
@@ -92,7 +111,7 @@
             </ul>
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        <section id="testimonial" class="p-6 my-12 scroll-mt-20">
+        <section id="testimonial" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
             <h2 class="text-4xl font-bold text-center mb-6 text-slate-900 dark:text-white">
                 客戶回饋
             </h2>
@@ -154,5 +173,28 @@
             </form>
         </section>
     </main>
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>龍底加人力派遣專業有限公司</h2>
+                台北市中正區仁愛路168號<br>
+                電郵地址： <a href="mailto:yoyoyo@longdijia.com">yoyoyo@longdijia.com</a><br>
+                電話： <a href="tel:+886900000">(02) 23700700</a>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="#services" class="hover:opacity-90">多元服務</a>
+                <a href="#testimonial" class="hover:opacity-90">客戶回饋</a>
+                <a href="#contact" class="hover:opacity-90">專人諮詢</a>
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">
+                    Copyright &copy; <span id="year">2024</span>
+                </p>
+                <p class="text-right">
+                    All Rights Reserved
+                </p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
