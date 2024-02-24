@@ -1,200 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="sm:scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>龍底加人力派遣專業</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
-</head>
-<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white" >
+  </head>
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
     <header class="bg-teal-700 text-white sticky top-0 z-10">
-        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-3xl font-medium">
-                <a href="#hero">💪 龍底加人力派遣專業</a>
-            </h1>
-            <div>
-                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8 z-10">
-                    <!-- &#9776 -->
-                    <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 duration-500 transition-all
-                         before:content-[''] before:bg-white before:w-8 before:h-1 before:duration-500 before:transition-all
-                         before:rounded before:absolute before:-translate-x-4 before:-translate-y-3
-                         after:content-[''] after:bg-white after:w-8 after:h-1 after:transition-all after:duration-500
-                         after:rounded after:absolute after:-translate-x-4 after:translate-y-3">
-                         
-                    </div>
-                </button>
-                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
-                    <a href="#services" class="hover:opacity-90">多元服務</a>
-                    <a href="#testimonial" class="hover:opacity-90">客戶回饋</a>
-                    <a href="#contact" class="hover:opacity-90">專人諮詢</a>
-                </nav>
-            </div>
-        </section>
-        <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden" >
-            <!-- <button class="text-8xl px-6 self-end">
+      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">💪 龍底加人力派遣專業</a>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="text-3xl md:hidden cursor-pointer relative w-8 h-8 z-10"
+          >
+            <!-- &#9776 -->
+            <div
+              class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 duration-500 transition-all before:content-[''] before:bg-white before:w-8 before:h-1 before:duration-500 before:transition-all before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-white after:w-8 after:h-1 after:transition-all after:duration-500 after:rounded after:absolute after:-translate-x-4 after:translate-y-3"
+            ></div>
+          </button>
+          <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+            <a href="#services" class="hover:opacity-90">多元服務</a>
+            <a href="#testimonial" class="hover:opacity-90">客戶回饋</a>
+            <a href="#contact" class="hover:opacity-90">專人諮詢</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden"
+      >
+        <!-- <button class="text-8xl px-6 self-end">
                 &times;
             </button> -->
-            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-                <a href="#hero" class="w-full text-center py-6 hover:opacity-90">首頁</a>
-                <a href="#services" class="w-full text-center py-6 hover:opacity-90">多元服務</a>
-                <a href="#testimonial" class="w-full text-center py-6 hover:opacity-90">客戶回饋</a>
-                <a href="#contact" class="w-full text-center py-6 hover:opacity-90">專人諮詢</a>
-            </nav>
-        </section>
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-90"
+            >首頁</a
+          >
+          <a href="#services" class="w-full text-center py-6 hover:opacity-90"
+            >多元服務</a
+          >
+          <a
+            href="#testimonial"
+            class="w-full text-center py-6 hover:opacity-90"
+            >客戶回饋</a
+          >
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-90"
+            >專人諮詢</a
+          >
+        </nav>
+      </section>
     </header>
     <main id="hero" class="max-w-4xl mx-auto">
-        <section class="flex flex-col-reverse justify-center sm:flex-row sm:mt-12 p-6 items-center gap-8 mt-9 mb-12 widescreen:section-min-height tallscreen:section-min-height">
-            <article class="sm:w-1/2">
-                <h2 class="max-w-md text-4xl font-bold text-center sm:text-left text-slate-900 dark:text-white">
-                    順應企業產業、長短期需求<br><span class="text-indigo-700 dark:text-indigo-300">提供最適合的人力派遣服務<br></span> 為您的企業做最有力的後援 
-                </h2>
-                <p class="maax-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
-                    多元派遣，專業應對
-                </p>
-                <p class="maax-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
-                    品質第一，服務至上
-                </p>
-            </article>
-            <div class="img-container sm:w-1/2">
-                <img src="./img/leader_sagyouin_man.png" alt="logo">
+      <section
+        class="flex flex-col-reverse justify-center sm:flex-row sm:mt-12 p-6 items-center gap-8 mt-9 mb-12 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-4xl font-bold text-center sm:text-left text-slate-900 dark:text-white"
+          >
+            順應企業產業、長短期需求<br /><span
+              class="text-indigo-700 dark:text-indigo-300"
+              >提供最適合的人力派遣服務<br
+            /></span>
+            為您的企業做最有力的後援
+          </h2>
+          <p
+            class="maax-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            多元派遣，專業應對
+          </p>
+          <p
+            class="maax-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            品質第一，服務至上
+          </p>
+        </article>
+        <div class="img-container sm:w-1/2">
+          <img src="./img/leader_sagyouin_man.png" alt="logo" />
+        </div>
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+      <section
+        id="services"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center mb-6 text-slate-900 dark:text-white"
+        >
+          多元服務
+        </h2>
+        <ul
+          class="list-none mx-auto my-12 flex flex-col sm:flex-row sm:mt-72 items-center gap-8"
+        >
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <div class="icon_container h-28 max-h-28 mb-6">
+              <img
+                src="./img/fishing_wading.png"
+                alt="fishing"
+                class="max-h-full"
+              />
             </div>
-        </section>
-        <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        <section id="services" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
-            <h2 class="text-4xl font-bold text-center mb-6 text-slate-900 dark:text-white">
-                多元服務
-            </h2>
-            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row sm:mt-72 items-center gap-8">
-                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-                    <div class="icon_container h-28 max-h-28 mb-6">
-                        <img src="./img/fishing_wading.png" alt="fishing" class="max-h-full">
-                    </div>
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-                        農漁業勞務
-                    </h3>
-                    <p class="hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400 mt-2">
-                        $
-                    </p>
-                    <p class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2">
-                        吃苦耐勞
-                    </p>
-                </li>
-                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-                    <div class="icon_container h-28 max-h-28 mb-6">
-                        <img src="./img/keibi_genkin_yusou.png" alt="fishing" class="max-h-full">
-                    </div>
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-                        保全隨扈
-                    </h3>
-                    <p class="hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400 mt-2">
-                        $
-                    </p>
-                    <p class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2">
-                        武術專業
-                    </p>
-                </li>
-                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-                    <div class="icon_container h-28 max-h-28 mb-6">
-                        <img src="./img/yuubin_takuhaiin_run_man.png" alt="fishing" class="max-h-full">
-                    </div>
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-                        物流士
-                    </h3>
-                    <p class="hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400 mt-2">
-                        $
-                    </p>
-                    <p class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2">
-                        經驗豐富
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        <section id="testimonial" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
-            <h2 class="text-4xl font-bold text-center mb-6 text-slate-900 dark:text-white">
-                客戶回饋
-            </h2>
-            <figure class="my-12">
-                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
-                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white darK:text-slate-400 
-                        before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2
-                        after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
-                    >
-                        我們在農漁業方面一直面臨著勞動力短缺的問題，但這家人力派遣公司給了我們解決之道。他們提供的農漁業勞工專業、勤奮，使我們能夠應對不同季節的生產需求。
-                    </p>
-                </blockquote>
-                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
-                    &#8212;男耕務農行
-                </figcaption>
-            </figure>
-            <figure class="my-12">
-                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
-                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white darK:text-slate-400 
-                        before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2
-                        after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
-                    >
-                        選擇了這家人力派遣公司是我們業務的<span class="italic">最佳決定</span>！他們提供的送貨人員非常專業，每次都準時且可靠。這種可靠性使我們能夠更有效地管理我們的物流業務，大大提升了我們的客戶滿意度。
-                    </p>
-                </blockquote>
-                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
-                    &#8212;健宏企業社
-                </figcaption>
-            </figure>
-            <figure class="my-12">
-                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
-                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white darK:text-slate-400 
-                        before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2
-                        after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
-                    >
-                        這家公司的服務不僅僅是提供人力，更是為我們的業務<span class="italic">量身定制解決方案</span>。他們的團隊總是願意聽取我們的需求，並提供最適合的人力配置方案。與他們合作，我們的業務得以持續發展。
-                    </p>
-                </blockquote>
-                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
-                    &#8212;超豐實業
-                </figcaption>
-            </figure>
-        </section>
-        <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        <section id="contact" class="p-6 my-12 scroll-mt-16">
-            <h2 class="text-4xl font-bold text-center mb-6 text-slate-900 dark:text-white">
-                專人諮詢
-            </h2>
-            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
-                <label for="phone">聯絡電話:</label>
-                <input type="text" id="phone" name="subject" required minlength="3" maxlength="60" placeholder="留下您的大名" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border-solid border-slate-900 dark:border-none" />
-                <label for="name">姓名:</label>
-                <input type="text" id="name" name="subject" required minlength="3" maxlength="60" placeholder="留下您的聯絡電話" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border-solid border-slate-900 dark:border-none" />
-                <label for="service_type">業務需求：</label>
-                <textarea name="service_type" id="service_type" cols="30" rows="10" placeholder="提供您的業務需求" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"></textarea>
-                <button class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">
-                    送出
-                </button>
-            </form>
-        </section>
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              農漁業勞務
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
+              $
+            </p>
+            <p
+              class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
+              吃苦耐勞
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <div class="icon_container h-28 max-h-28 mb-6">
+              <img
+                src="./img/keibi_genkin_yusou.png"
+                alt="fishing"
+                class="max-h-full"
+              />
+            </div>
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              保全隨扈
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
+              $
+            </p>
+            <p
+              class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
+              武術專業
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <div class="icon_container h-28 max-h-28 mb-6">
+              <img
+                src="./img/yuubin_takuhaiin_run_man.png"
+                alt="fishing"
+                class="max-h-full"
+              />
+            </div>
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              物流士
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
+              $
+            </p>
+            <p
+              class="sm:hidden text-2xl text-center text-slate-500 dark:text-slate-400 mt-2"
+            >
+              經驗豐富
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+      <section
+        id="testimonial"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center mb-6 text-slate-900 dark:text-white"
+        >
+          客戶回饋
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white darK:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              我們在農漁業方面一直面臨著勞動力短缺的問題，但這家人力派遣公司給了我們解決之道。他們提供的農漁業勞工專業、勤奮，使我們能夠應對不同季節的生產需求。
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212;男耕務農行
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white darK:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              選擇了這家人力派遣公司是我們業務的<span class="italic"
+                >最佳決定</span
+              >！他們提供的送貨人員非常專業，每次都準時且可靠。這種可靠性使我們能夠更有效地管理我們的物流業務，大大提升了我們的客戶滿意度。
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212;健宏企業社
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white darK:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              這家公司的服務不僅僅是提供人力，更是為我們的業務<span
+                class="italic"
+                >量身定制解決方案</span
+              >。他們的團隊總是願意聽取我們的需求，並提供最適合的人力配置方案。與他們合作，我們的業務得以持續發展。
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212;超豐實業
+          </figcaption>
+        </figure>
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+      <section id="contact" class="p-6 my-12 scroll-mt-16">
+        <h2
+          class="text-4xl font-bold text-center mb-6 text-slate-900 dark:text-white"
+        >
+          專人諮詢
+        </h2>
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="phone">聯絡電話:</label>
+          <input
+            type="text"
+            id="phone"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="留下您的大名"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border-solid border-slate-900 dark:border-none"
+          />
+          <label for="name">姓名:</label>
+          <input
+            type="text"
+            id="name"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="留下您的聯絡電話"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border-solid border-slate-900 dark:border-none"
+          />
+          <label for="service_type">業務需求：</label>
+          <textarea
+            name="service_type"
+            id="service_type"
+            cols="30"
+            rows="10"
+            placeholder="提供您的業務需求"
+            required
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          ></textarea>
+          <button
+            class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+          >
+            送出
+          </button>
+        </form>
+      </section>
     </main>
     <footer id="footer" class="bg-teal-700 text-white text-xl">
-        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
-            <address>
-                <h2>龍底加人力派遣專業有限公司</h2>
-                台北市中正區仁愛路168號<br>
-                電郵地址： <a href="mailto:yoyoyo@longdijia.com">yoyoyo@longdijia.com</a><br>
-                電話： <a href="tel:+886900000">(02) 23700700</a>
-            </address>
-            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
-                <a href="#services" class="hover:opacity-90">多元服務</a>
-                <a href="#testimonial" class="hover:opacity-90">客戶回饋</a>
-                <a href="#contact" class="hover:opacity-90">專人諮詢</a>
-            </nav>
-            <div class="flex flex-col sm:gap-2">
-                <p class="text-right">
-                    Copyright &copy; <span id="year">2024</span>
-                </p>
-                <p class="text-right">
-                    All Rights Reserved
-                </p>
-            </div>
-        </section>
+      <section
+        class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>龍底加人力派遣專業有限公司</h2>
+          台北市中正區仁愛路168號<br />
+          電郵地址：
+          <a href="mailto:yoyoyo@longdijia.com">yoyoyo@longdijia.com</a><br />
+          電話： <a href="tel:+886900000">(02) 23700700</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+          <a href="#services" class="hover:opacity-90">多元服務</a>
+          <a href="#testimonial" class="hover:opacity-90">客戶回饋</a>
+          <a href="#contact" class="hover:opacity-90">專人諮詢</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
